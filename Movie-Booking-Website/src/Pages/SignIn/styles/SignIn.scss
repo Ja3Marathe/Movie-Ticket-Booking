@@ -1,0 +1,92 @@
+.signInFormContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: var(--background-color);
+
+    .formWrapper {
+        width: 450px;
+        margin: 24px;
+        background: var(--white);
+        padding: 44px 40px;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+
+        .inputWrapper {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            margin-top: 24px;
+
+            &:first-child {
+                margin-top: 0;
+            }
+
+            label {
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 16px;
+                color: var(--text-black-secondary);
+            }
+
+            input {
+                padding: 12px 16px 12px 16px;
+                border-radius: 8px;
+                border: 1px solid var(--text-black-ternery);
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 14px;
+                color: var(--text-black-secondary);
+                width: calc(100% - 32px);
+            }
+
+            .SignUpBtn {
+                background-color: var(--green-primary);
+                border-radius: 8px;
+                padding: 16px;
+                border: none;
+                cursor: pointer;
+                background-color: #1de782;
+                width: 100%;
+                color: white;
+                letter-spacing: 0.70px;
+                font-size: 16px;
+                font-weight: 600;
+            }
+
+            :disabled {
+                background-color: #73e3ab;
+            }
+        }
+    }
+
+    h2 {
+        color: var(--text-black-primary);
+        font-size: 38px;
+        font-weight: 600;
+        line-height: 30px;
+        margin: 0;
+        padding-bottom: 37px;
+    }
+
+    .noteWrapper {
+        margin-top: 24px;
+        text-align: center;
+
+        span {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 16px;
+            color: var(--text-black-ternery);
+
+            a {
+                margin-left: 5px;
+                color: var(--green-primary);
+                cursor: pointer;
+                text-decoration: none;
+            }
+        }
+    }
+}
